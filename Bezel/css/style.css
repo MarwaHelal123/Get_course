@@ -1,0 +1,231 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main-head
+{
+    font-size: 100px;
+}
+
+.color
+{
+  background-color:  #00c3da;
+  color: #fff;
+}
+p,ul
+{
+    color: #787878;
+}
+ul
+{
+list-style: none;
+}
+.home .carousel-item 
+{
+    position: relative !important;
+}
+.home .carousel-item .layer
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home .carousel-item .layer h1
+{
+    animation-name: delay;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-play-state: running;
+  animation-timing-function: ease;
+}
+.home .carousel-item .layer h5
+{
+    animation-name: delay;
+    animation-delay: 1.2s;
+    animation-duration: 1s;
+    animation-play-state: running;
+  animation-timing-function: ease;
+}
+.home .carousel-item .layer button
+{
+    animation-name: delay2;
+    animation-delay: 2.2s;
+    animation-duration: 1s;
+    animation-play-state: running;
+  animation-timing-function: ease;
+}
+@keyframes delay2
+{
+    from{opacity: 0 ; transform: scale(1,1); margin-left: 0px;}
+  to{opacity: 1;transform: scale(1.2,1.2);margin-left: 15px} ; 
+}
+@keyframes delay
+{
+    from{opacity: 0 ; transform: scale(1,1);}
+  to{opacity: 1;transform: scale(1.2,1.2)} ; 
+}
+.about p
+{
+    font-size: 24px;
+}
+.about .dark-bttn:hover
+{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+.team .item 
+{
+    position: relative;
+    overflow: hidden;
+   
+}
+.team  .item  .overlay
+{
+    background-color: #00c3da;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:100%;
+    bottom:0%;
+    transition: all .3s ease;
+    
+}
+.team  .item:hover  .overlay
+{
+    top:0px;
+    bottom:100%;
+}
+.team .bottom
+{
+    position: relative;
+    top: 180px;
+    opacity: 0;
+}
+.team  .item:hover .bottom
+{
+    opacity: 1;
+}
+.pricing
+{
+    background-color: #f7f7f7;
+}
+.pricing .item .price span
+{
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+}
+.pricing .item .price h1
+{
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    margin: 0;  
+}
+.price
+{
+    border-bottom: 1px solid #eee;
+   
+    
+}
+ .pricing .bg
+{
+    background-color: #fff;
+}
+.price ul  li
+{
+    line-height: 2 !important;
+}
+.pricing .item .third
+{
+    padding-top: 100px !important;
+    padding-bottom: 1000px !important;
+}
+.happy
+{
+    background-color: #f7f7f7;
+}
+.happy .special-card
+{
+    background-color: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left:100px;
+    padding-right:100px ;
+    overflow: visible !important;
+}
+.happy .carousel  ol.carousel-indicators li
+{
+    background-color: #00c3da;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.img-box
+{
+    top:-65%;
+    left: 50%;
+    
+    transform: translate(-50%);
+}
+ .happy img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.services
+{
+    background-color: #636363;
+}
+.main-item
+{
+ animation-name: move;
+ animation-duration: 2s;
+ animation-delay: 0.2s;
+}
+.ul-item
+{
+ animation-name: mov;
+ animation-duration: 2s;
+ animation-delay: 1.2s;
+}
+@keyframes move
+{
+ from{left:-40px}
+ to{left:40px}
+}
+@keyframes mov
+{
+ from{right:-40px}
+ to{right:0px}
+}
+ .fas
+{
+    font-size: 50px;
+    color:#00ac9e;
+    width: 55px;
+}
+.services p
+{
+    line-height: 1.5;
+}
+
+.carousel-caption  .left-button:hover
+{
+  background-color: #fff;
+ color: #000 !important;
+}
